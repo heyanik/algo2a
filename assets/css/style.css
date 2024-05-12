@@ -23,14 +23,14 @@
   --blue-ryb_80: hsla(241, 88%, 60%, 0.8);
   --bittersweet: hsl(0, 100%, 69%);
   --eerie-black: hsl(0, 0%, 13%);
-  --ghost-white: hsl(230, 60%, 98%);
+  --ghost-white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 80%);
   --slate-gray: hsl(225, 8%, 48%);
   --cool-gray: hsl(225, 11%, 59%);
   --gainsboro: hsl(217, 16%, 90%);
   --mustard: hsl(47, 100%, 69%);
   /* --white: hsl(0, 0%, 100%); */
-  --white: #f7fafc;
+  --white: hsl(210, 40%, 98%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(240, 5%, 26%);
   --jet: hsl(0, 0%, 21%);

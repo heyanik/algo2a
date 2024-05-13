@@ -28,7 +28,8 @@
   --slate-gray: hsl(225, 8%, 48%);
   --cool-gray: hsl(225, 11%, 59%);
   --gainsboro: hsl(217, 16%, 90%);
-  --mustard: hsl(47, 100%, 69%);
+/*   --mustard: hsl(47, 100%, 69%); */
+  --mustard: hsl(251,248,190);
   /* --white: hsl(0, 0%, 100%); */
   --white: hsl(210, 40%, 98%);
   --black: hsl(0, 0%, 0%);

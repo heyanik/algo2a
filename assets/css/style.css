@@ -339,10 +339,32 @@ body {
   position: static;
   width: 12px;
   height: 12px;
-  background-color: var(--mustard);
+  background-color: var(--cool-gray);
   display: inline-block;
   border-radius: 50%;
   margin-inline-end: 10px;
+  box-shadow: 0 0 0 0 var(--mustard);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+/* pulse animation */
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    box-shadow: 0 0 0 0 var(--mustard);
+  }
+
+  70% {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 10px var(--mustard);
+  }
+
+  100% {
+    transform: scale(0.5);
+    box-shadow: 0 0 0 0 var(--mustard);
+  }
 }
 
 .text-center {

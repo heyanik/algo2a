@@ -28,8 +28,9 @@
   --slate-gray: hsl(225, 8%, 48%);
   --cool-gray: hsl(225, 11%, 59%);
   --gainsboro: hsl(217, 16%, 90%);
-/*   --mustard: hsl(47, 100%, 69%); */
-  --mustard: hsl(251,248,190);
+  /* --mustard: hsl(47, 100%, 69%); */
+  --mustard: hsl(57, 88%, 86%);
+  /* --mustard: hsl(251,248,190); */
   /* --white: hsl(0, 0%, 100%); */
   --white: hsl(210, 40%, 98%);
   --black: hsl(0, 0%, 0%);
@@ -339,7 +340,7 @@ body {
   position: static;
   width: 12px;
   height: 12px;
-  background-color: var(--cool-gray);
+  background-color: var(--mustard);
   display: inline-block;
   border-radius: 50%;
   margin-inline-end: 10px;
@@ -357,7 +358,7 @@ body {
   }
 
   70% {
-    transform: scale(0.7);
+    transform: scale(0.5);
     box-shadow: 0 0 0 10px var(--mustard);
   }
 

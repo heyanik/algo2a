@@ -374,6 +374,7 @@ body {
 
 .section-title {
   margin-block: 30px 50px;
+  color: var(--black);
 }
 
 .grid-list {
@@ -681,6 +682,7 @@ body {
 
 .feature-card .card-icon {
   background-color: hsla(var(--color), 0.15);
+
   font-size: 24px;
   max-width: max-content;
   padding: 18px;
@@ -711,6 +713,13 @@ body {
 /*-----------------------------------*\
   #PROJECT
 \*-----------------------------------*/
+
+.filter-btn.active {
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
 
 .project {
   background-color: var(--ghost-white);
@@ -794,6 +803,12 @@ body {
 
 .newsletter {
   color: var(--white);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .newsletter .container {

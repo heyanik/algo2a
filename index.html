@@ -110,7 +110,7 @@
             </p>
 
             <div class="wrapper">
-              <a href="#" class="btn btn-primary has-before has-after">How It Works</a>
+              <a href="#" class="btn btn-primary has-before has-after">How We Works</a>
 
               <!-- <button class="hero-btn" aria-label="pixology promo">
                 <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
@@ -365,141 +365,49 @@
       <!-- 
         - #PROJECT
       -->
-
       <section class="section project" id="project" aria-label="project">
         <div class="container">
-
           <p class="section-subtitle has-before text-center">Projects</p>
-
           <h2 class="h2 section-title text-center">
             Pixology complete <span class="has-before">project</span>
           </h2>
-
           <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn active" data-filter-btn>Website</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Landing Page</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>iOS App</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Landing Page</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn>Branding Design</button>
-            </li>
-
+            <li><button class="filter-btn active" data-filter="Website">Website</button></li>
+            <li><button class="filter-btn" data-filter="Landing Page">Landing Page</button></li>
+            <li><button class="filter-btn" data-filter="iOS App">iOS App</button></li>
+            <li><button class="filter-btn" data-filter="Branding Design">Branding Design</button></li>
           </ul>
-
           <ul class="grid-list">
-
-            <li>
+            <li class="project-item" data-category="Website">
               <div class="project-card">
-
                 <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
-                  <img src="./assets/images/project-1.jpg" width="835" height="429" loading="lazy" alt="Book art design"
-                    class="img-cover">
+                  <img src="./assets/images/project-1.jpg" width="835" height="429" loading="lazy" alt="Book art design" class="img-cover">
                 </figure>
-
                 <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Book art design</a>
-                  </h3>
-
+                  <h3 class="h3"><a href="#" class="card-title">Book art design</a></h3>
                   <a href="#" class="card-tag">Branding</a>
                 </div>
-
               </div>
             </li>
-
-            <li>
+            <li class="project-item" data-category="Landing Page">
               <div class="project-card">
-
                 <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
-                    class="img-cover">
+                  <img src="./assets/images/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design" class="img-cover">
                 </figure>
-
                 <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Graphic Design</a>
-                  </h3>
-
+                  <h3 class="h3"><a href="#" class="card-title">Graphic Design</a></h3>
                   <a href="#" class="card-tag">Design</a>
                 </div>
-
               </div>
             </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-3.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">3d Digital Art</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-4.jpg" width="416" height="429" loading="lazy" alt="Web Design"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Web Design</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card">
-
-                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
-                  <img src="./assets/images/project-5.jpg" width="416" height="429" loading="lazy"
-                    alt="Mobile App Design" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Mobile App Design</a>
-                  </h3>
-
-                  <a href="#" class="card-tag">Design</a>
-                </div>
-
-              </div>
-            </li>
-
+            <!-- Add more projects here with appropriate data-category attributes -->
           </ul>
-
         </div>
       </section>
+
+
+
+
 
 
 
@@ -524,8 +432,7 @@
           <div class="newsletter-content">
 
             <p class="section-subtitle has-before">Get every update</p>
-
-            <h2 class="h2 section-title">Subscribe newslater get latest updates and deals</h2>
+            <br>
 
             <form action="" class="newsletter-form">
               <input type="email" name="email_address" placeholder="Enter your mail" required class="email-field">
@@ -957,6 +864,37 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectItems = document.querySelectorAll('.project-item');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to the clicked button
+          button.classList.add('active');
+
+          const filterValue = button.getAttribute('data-filter');
+
+          // Show/Hide project items based on the selected filter
+          projectItems.forEach(item => {
+            if (item.getAttribute('data-category') === filterValue || filterValue === 'All') {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+
 
 </body>
 

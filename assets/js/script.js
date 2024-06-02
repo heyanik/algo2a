@@ -55,3 +55,20 @@ const headerActive = function () {
 };
 
 addEventOnElem(window, "scroll", headerActive);
+
+
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth'
+});
+
+window.scrollBy({ 
+  top: 100, // could be negative value
+  left: 0, 
+  behavior: 'smooth' 
+});
+
+document.querySelector('.hello').scrollIntoView({ 
+  behavior: 'smooth' 
+})

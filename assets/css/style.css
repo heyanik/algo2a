@@ -1133,6 +1133,24 @@ body {
 }
 
 /**
+ * responsive for large than 600px screen
+ */
+
+ @media (max-width: 600px) {
+  .feature-banner img {
+      max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/**
  * responsive for large than 768px screen
  */
 
@@ -1219,7 +1237,26 @@ body {
 
   .feature-banner {
     max-width: max-content;
+  
   }
+
+  .feature-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0; /* Remove default margin */
+}
+
+.feature-banner img {
+    width: 100%;
+    height: auto;
+    max-width: 582px; /* Maintain original max width for larger screens */
+}
+
+
 
   .feature-list {
     gap: 30px;
@@ -1398,6 +1435,7 @@ body {
   /**
    * HERO
    */
+   
 
   .hero {
     background-image: linear-gradient(
@@ -1434,6 +1472,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
+
 
   /**
    * PROJECT

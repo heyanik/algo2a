@@ -56,19 +56,56 @@ const headerActive = function () {
 
 addEventOnElem(window, "scroll", headerActive);
 
-
 window.scroll({
-  top: 2500, 
-  left: 0, 
-  behavior: 'smooth'
+  top: 2500,
+  left: 0,
+  behavior: "smooth",
 });
 
-window.scrollBy({ 
+window.scrollBy({
   top: 100, // could be negative value
-  left: 0, 
-  behavior: 'smooth' 
+  left: 0,
+  behavior: "smooth",
 });
 
-document.querySelector('.hello').scrollIntoView({ 
-  behavior: 'smooth' 
-})
+document.querySelector(".hello").scrollIntoView({
+  behavior: "smooth",
+});
+
+//new js
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all links with the data-nav-link attribute
+  const navLinks = document.querySelectorAll("[data-nav-link]");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent the default anchor behavior
+
+      // Get the target section id from the href attribute
+      const targetId = this.getAttribute("href").substring(1);
+
+      // Scroll to the target section (if needed)
+      document.getElementById(targetId).scrollIntoView({
+        behavior: "smooth",
+      });
+
+      // Update the URL without the #
+      const newUrl =
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        window.location.pathname +
+        "service";
+      history.pushState({ path: newUrl }, "", newUrl);
+    });
+  });
+
+  // Handle the back/forward navigation
+  window.addEventListener("popstate", function (event) {
+    if (window.location.pathname.endsWith("service")) {
+      document.getElementById("service").scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+});

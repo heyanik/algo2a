@@ -1136,19 +1136,11 @@ body {
  * responsive for large than 600px screen
  */
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
   .feature-banner img {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
-
-
-
-
-
-
-
-
 
 /**
  * responsive for large than 768px screen
@@ -1237,7 +1229,6 @@ body {
 
   .feature-banner {
     max-width: max-content;
-  
   }
 
   .feature-banner {
@@ -1248,15 +1239,13 @@ body {
     max-width: 100%;
     overflow: hidden;
     margin: 0; /* Remove default margin */
-}
+  }
 
-.feature-banner img {
+  .feature-banner img {
     width: 100%;
     height: auto;
     max-width: 582px; /* Maintain original max width for larger screens */
-}
-
-
+  }
 
   .feature-list {
     gap: 30px;
@@ -1435,7 +1424,6 @@ body {
   /**
    * HERO
    */
-   
 
   .hero {
     background-image: linear-gradient(
@@ -1472,8 +1460,6 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-
-
 
   /**
    * PROJECT
@@ -1669,4 +1655,116 @@ body {
   .blog-card .card-title {
     --fs-4: 2.4rem;
   }
+}
+
+/* how we work  */
+
+.how-it-works {
+  height: 80vh;
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(69, 61, 200, 1) 0%,
+    rgba(52, 52, 145, 1) 35%,
+    rgba(32, 186, 217, 1) 100%
+  );
+}
+
+.class-hero {
+  font-size: 100px;
+  color: #f0f0f0;
+}
+
+.work-flow {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 450px 450px;
+  column-gap: 50px;
+  row-gap: 120px;
+}
+.work-flow p {
+  color: #747474;
+  font-weight: 700;
+}
+
+.placeholder {
+  background-color: #f0f0f0;
+  height: 200px;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.why-use-loom {
+  background: linear-gradient(
+    90deg,
+    rgba(69, 61, 200, 1) 0%,
+    rgba(52, 52, 145, 1) 35%,
+    rgba(32, 186, 217, 1) 100%
+  );
+  color: f0f0f0;
+  padding: 2em;
+  margin: 2em 0;
+}
+
+.why-use-loom > h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.why-use-loom > h3,
+p {
+  color: #dddddd;
+}
+
+.features-h {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature-1 {
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+.feature-1 > h3 {
+  margin-bottom: 0.5em;
+  color: #dddddd;
+}
+
+.pricing {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.pricing .price {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.examples {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example {
+  width: 30%;
+  background: #f8f8f8;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.h-contact-us {
+  width: 70%;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  column-gap: 50px;
 }

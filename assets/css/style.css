@@ -1084,6 +1084,195 @@ body {
   background-image: var(--gradient);
 }
 
+/*---------------------------------------*\
+ #How we work
+/*---------------------------------------*\
+
+/* how we work  */
+
+.how-it-works {
+  width: 100%;
+  height: 80vh;
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(69, 61, 200, 1) 0%,
+    rgba(52, 52, 145, 1) 35%,
+    rgba(32, 186, 217, 1) 100%
+  );
+}
+
+.class-hero {
+  font-size: 100px;
+  color: #f0f0f0;
+}
+
+.work-flow {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 450px 450px;
+  column-gap: 50px;
+  row-gap: 120px;
+}
+.work-flow p {
+  color: #747474;
+  font-weight: 700;
+}
+
+.placeholder {
+  background-color: #f0f0f0;
+  height: 200px;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.why-use-loom {
+  background: linear-gradient(
+    90deg,
+    rgba(69, 61, 200, 1) 0%,
+    rgba(52, 52, 145, 1) 35%,
+    rgba(32, 186, 217, 1) 100%
+  );
+  color: f0f0f0;
+  padding: 2em;
+  margin: 2em 0;
+}
+
+.why-use-loom > h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.why-use-loom > h3,
+p {
+  color: #dddddd;
+}
+
+.features-h {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature-1 {
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+.feature-1 > h3 {
+  margin-bottom: 0.5em;
+  color: #dddddd;
+}
+
+.pricing {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.pricing .price {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.examples {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example {
+  width: 30%;
+  background: #f8f8f8;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.h-contact-us {
+  width: 70%;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 50px;
+  column-gap: 150px;
+}
+
+/* toost message css */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #914646; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1096,6 +1285,8 @@ body {
   /**
    * REUSED STYLE
    */
+
+  /* how we work  */
 
   .container {
     max-width: 540px;
@@ -1140,6 +1331,95 @@ body {
 @media (max-width: 600px) {
   .feature-banner img {
     max-width: 100%;
+  }
+
+  /* How we work  */
+
+  .how-it-works h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .work-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-flow > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .work-flow h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .work-flow p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .work-flow img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .why-use-loom h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .features-h {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-1 {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .feature-1 img {
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+  }
+
+  .feature-1 h3 {
+    font-size: 18px;
+  }
+
+  .feature-1 p {
+    font-size: 14px;
+  }
+
+  .h-contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .h-contact-us h1 {
+    font-size: 24px;
+  }
+
+  .h-contact-us p {
+    font-size: 16px;
+  }
+
+  .h-contact-us .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
   }
 }
 
@@ -1657,172 +1937,3 @@ body {
     --fs-4: 2.4rem;
   }
 }
-
-/* how we work  */
-
-.how-it-works {
-  height: 80vh;
-  margin: 2em 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    90deg,
-    rgba(69, 61, 200, 1) 0%,
-    rgba(52, 52, 145, 1) 35%,
-    rgba(32, 186, 217, 1) 100%
-  );
-}
-
-.class-hero {
-  font-size: 100px;
-  color: #f0f0f0;
-}
-
-.work-flow {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 450px 450px;
-  column-gap: 50px;
-  row-gap: 120px;
-}
-.work-flow p {
-  color: #747474;
-  font-weight: 700;
-}
-
-.placeholder {
-  background-color: #f0f0f0;
-  height: 200px;
-  width: 100%;
-  margin-top: 1em;
-}
-
-.why-use-loom {
-  background: linear-gradient(
-    90deg,
-    rgba(69, 61, 200, 1) 0%,
-    rgba(52, 52, 145, 1) 35%,
-    rgba(32, 186, 217, 1) 100%
-  );
-  color: f0f0f0;
-  padding: 2em;
-  margin: 2em 0;
-}
-
-.why-use-loom > h2 {
-  color: white;
-  text-align: center;
-  margin-bottom: 1em;
-}
-.why-use-loom > h3,
-p {
-  color: #dddddd;
-}
-
-.features-h {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.feature-1 {
-  width: 30%;
-  margin-bottom: 1em;
-}
-
-.feature-1 > h3 {
-  margin-bottom: 0.5em;
-  color: #dddddd;
-}
-
-.pricing {
-  text-align: center;
-  margin: 2em 0;
-}
-
-.pricing .price {
-  font-size: 2em;
-  margin: 1em 0;
-}
-
-.examples {
-  display: flex;
-  justify-content: space-around;
-}
-
-.example {
-  width: 30%;
-  background: #f8f8f8;
-  padding: 1em;
-  border-radius: 8px;
-}
-
-.h-contact-us {
-  width: 70%;
-  background-color: black;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  padding: 50px;
-  column-gap: 150px;
-}
-
-
-
-
-
-
-/* toost message css */
-/* The snackbar - position it at the bottom and in the middle of the screen */
-#snackbar {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
-  margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #914646; /* Black background color */
-  color: #fff; /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
-  padding: 16px; /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  z-index: 1; /* Add a z-index if needed */
-  left: 50%; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
-}
-
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#snackbar.show {
-  visibility: visible; /* Show the snackbar */
-  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-  However, delay the fade out process for 2.5 seconds */
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
-}
-
-
-
-
